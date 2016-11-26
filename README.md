@@ -1,4 +1,6 @@
-madera
-======
+=======
+# maderaCESI
 
-A Symfony project created on November 25, 2016, 2:28 pm.
+Lien du tuto : http://symfony.com/doc/current/bundles/SonataAdminBundle/getting_started/installation.html
+
+script pour la base local "script_symfony.sql" dans /CODE SOURCE
