@@ -1,0 +1,7 @@
+b9d675,127.0.0.1,GET,http://localhost:8000/,1480153095,,200
+cb95d9,127.0.0.1,GET,http://localhost:8000/admin,1480153101,,301
+fae8dc,127.0.0.1,GET,http://localhost:8000/admin/,1480153101,,301
+e0c60d,127.0.0.1,GET,http://localhost:8000/admin/dashboard,1480153101,,200
+f96b3a,127.0.0.1,GET,http://localhost:8000/admin,1480153102,,301
+cbaa2f,127.0.0.1,GET,http://localhost:8000/admin/,1480153102,,301
+817351,127.0.0.1,GET,http://localhost:8000/admin/dashboard,1480153102,,200
