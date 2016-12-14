@@ -15,8 +15,8 @@ class __TwigTemplate_b86e4abae97edd40992fa23200866f90b56cd491a5a97595a0a933957a0
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_fb61c7657b6dce10ab13a15232fe7549f9fcac0cf4ae623bc72e8696b94e113f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fb61c7657b6dce10ab13a15232fe7549f9fcac0cf4ae623bc72e8696b94e113f->enter($__internal_fb61c7657b6dce10ab13a15232fe7549f9fcac0cf4ae623bc72e8696b94e113f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
+        $__internal_41374c3367583b15a84cc418c7699f205be50b2a487068dede84d60e3534504a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_41374c3367583b15a84cc418c7699f205be50b2a487068dede84d60e3534504a->enter($__internal_41374c3367583b15a84cc418c7699f205be50b2a487068dede84d60e3534504a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
 
         // line 2
         $context["colors"] = array("success" => "#4F805D", "warning" => "#A46A1F", "error" => "#B0413E");
@@ -395,10 +395,12 @@ class __TwigTemplate_b86e4abae97edd40992fa23200866f90b56cd491a5a97595a0a933957a0
     border-color: #777;
     border-radius: 0;
     margin: 6px 0 12px 0;
-    width: 200px;
 }
 .sf-toolbar-block-dump pre.sf-dump:last-child {
     margin-bottom: 0;
+}
+.sf-toolbar-block-dump .sf-toolbar-info-piece {
+    display: block;
 }
 .sf-toolbar-block-dump .sf-toolbar-info-piece .sf-toolbar-file-line {
     color: #AAA;
@@ -410,9 +412,9 @@ class __TwigTemplate_b86e4abae97edd40992fa23200866f90b56cd491a5a97595a0a933957a0
 
 /* Override the setting when the toolbar is on the top */
 ";
-        // line 373
+        // line 375
         if ((($context["position"] ?? $this->getContext($context, "position")) == "top")) {
-            // line 374
+            // line 376
             echo "    .sf-minitoolbar {
         border-bottom-left-radius: 4px;
         border-top-left-radius: 0;
@@ -433,18 +435,18 @@ class __TwigTemplate_b86e4abae97edd40992fa23200866f90b56cd491a5a97595a0a933957a0
     }
 ";
         }
-        // line 393
+        // line 395
         echo "
 ";
-        // line 394
+        // line 396
         if ( !($context["floatable"] ?? $this->getContext($context, "floatable"))) {
-            // line 395
+            // line 397
             echo "    .sf-toolbarreset {
         position: static;
     }
 ";
         }
-        // line 399
+        // line 401
         echo "
 /* Responsive Design */
 .sf-toolbar-icon .sf-toolbar-label,
@@ -538,7 +540,7 @@ class __TwigTemplate_b86e4abae97edd40992fa23200866f90b56cd491a5a97595a0a933957a0
 }
 ";
         
-        $__internal_fb61c7657b6dce10ab13a15232fe7549f9fcac0cf4ae623bc72e8696b94e113f->leave($__internal_fb61c7657b6dce10ab13a15232fe7549f9fcac0cf4ae623bc72e8696b94e113f_prof);
+        $__internal_41374c3367583b15a84cc418c7699f205be50b2a487068dede84d60e3534504a->leave($__internal_41374c3367583b15a84cc418c7699f205be50b2a487068dede84d60e3534504a_prof);
 
     }
 
@@ -554,7 +556,7 @@ class __TwigTemplate_b86e4abae97edd40992fa23200866f90b56cd491a5a97595a0a933957a0
 
     public function getDebugInfo()
     {
-        return array (  448 => 399,  442 => 395,  440 => 394,  437 => 393,  416 => 374,  414 => 373,  256 => 218,  249 => 214,  242 => 210,  235 => 206,  229 => 203,  223 => 200,  24 => 3,  22 => 2,);
+        return array (  450 => 401,  444 => 397,  442 => 396,  439 => 395,  418 => 376,  416 => 375,  256 => 218,  249 => 214,  242 => 210,  235 => 206,  229 => 203,  223 => 200,  24 => 3,  22 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -925,10 +927,12 @@ class __TwigTemplate_b86e4abae97edd40992fa23200866f90b56cd491a5a97595a0a933957a0
     border-color: #777;
     border-radius: 0;
     margin: 6px 0 12px 0;
-    width: 200px;
 }
 .sf-toolbar-block-dump pre.sf-dump:last-child {
     margin-bottom: 0;
+}
+.sf-toolbar-block-dump .sf-toolbar-info-piece {
+    display: block;
 }
 .sf-toolbar-block-dump .sf-toolbar-info-piece .sf-toolbar-file-line {
     color: #AAA;

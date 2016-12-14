@@ -29,16 +29,16 @@
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
-    <parameter key="database_host">127.0.0.1</parameter>
-    <parameter key="database_port">8889</parameter>
-    <parameter key="database_name">symfony</parameter>
-    <parameter key="database_user">root</parameter>
-    <parameter key="database_password">root</parameter>
+    <parameter key="database_host">mysql-yearl.alwaysdata.net</parameter>
+    <parameter key="database_port">null</parameter>
+    <parameter key="database_name">yearl_symfony</parameter>
+    <parameter key="database_user">yearl</parameter>
+    <parameter key="database_password">lady45</parameter>
     <parameter key="mailer_transport">smtp</parameter>
-    <parameter key="mailer_host">127.0.0.1</parameter>
+    <parameter key="mailer_host">mysql-yearl.alwaysdata.net</parameter>
     <parameter key="mailer_user">null</parameter>
     <parameter key="mailer_password">null</parameter>
-    <parameter key="secret">d11fe9d3eb719bf2b4fb1f50fd621c4ac7386139</parameter>
+    <parameter key="secret">505a08cc42ff4042f7644d578c7bf2299924f71e</parameter>
     <parameter key="locale">en</parameter>
     <parameter key="controller_resolver.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver</parameter>
     <parameter key="controller_name_converter.class">Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser</parameter>
@@ -88,7 +88,7 @@
     <parameter key="translation.extractor.class">Symfony\Component\Translation\Extractor\ChainExtractor</parameter>
     <parameter key="translation.writer.class">Symfony\Component\Translation\Writer\TranslationWriter</parameter>
     <parameter key="property_accessor.class">Symfony\Component\PropertyAccess\PropertyAccessor</parameter>
-    <parameter key="kernel.secret">d11fe9d3eb719bf2b4fb1f50fd621c4ac7386139</parameter>
+    <parameter key="kernel.secret">505a08cc42ff4042f7644d578c7bf2299924f71e</parameter>
     <parameter key="kernel.http_method_override">true</parameter>
     <parameter key="kernel.trusted_hosts" type="collection"/>
     <parameter key="kernel.trusted_proxies" type="collection"/>
@@ -385,7 +385,7 @@
     <parameter key="swiftmailer.mailer.default.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.encryption">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.port">25</parameter>
-    <parameter key="swiftmailer.mailer.default.transport.smtp.host">127.0.0.1</parameter>
+    <parameter key="swiftmailer.mailer.default.transport.smtp.host">mysql-yearl.alwaysdata.net</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.username">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.password">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
@@ -1297,7 +1297,7 @@
       <argument>/Users/Maxime/Documents/CESI/PFR/CODE/Madera/CODE SOURCE/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
-      <argument>d11fe9d3eb719bf2b4fb1f50fd621c4ac7386139</argument>
+      <argument>505a08cc42ff4042f7644d578c7bf2299924f71e</argument>
     </service>
     <service id="config_cache_factory" class="Symfony\Component\Config\ResourceCheckerConfigCacheFactory">
       <argument type="collection">
@@ -2751,7 +2751,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>584ff68469a4c4.34288099</argument>
+            <argument>585155d59ada22.95793942</argument>
           </service>
         </argument>
       </argument>
@@ -3040,7 +3040,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>584ff68469a4c4.34288099</argument>
+            <argument>585155d59ada22.95793942</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -3468,11 +3468,11 @@
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">127.0.0.1</argument>
-        <argument key="port">8889</argument>
-        <argument key="dbname">symfony</argument>
-        <argument key="user">root</argument>
-        <argument key="password">root</argument>
+        <argument key="host">mysql-yearl.alwaysdata.net</argument>
+        <argument key="port">null</argument>
+        <argument key="dbname">yearl_symfony</argument>
+        <argument key="user">yearl</argument>
+        <argument key="password">lady45</argument>
         <argument key="charset">UTF8</argument>
         <argument key="driverOptions" type="collection"/>
         <argument key="defaultTableOptions" type="collection"/>
@@ -5184,37 +5184,20 @@
           <argument>mopa_bootstrap.form.type_extension.horizontal</argument>
           <argument>mopa_bootstrap.form.type_extension.widget_collection</argument>
           <argument>mopa_bootstrap.form.type_extension.tabbed</argument>
-          <argument>form.type_extension.form.http_foundation</argument>
-          <argument>form.type_extension.form.validator</argument>
-          <argument>form.type_extension.csrf</argument>
-          <argument>form.type_extension.form.data_collector</argument>
-          <argument>sonata.admin.form.extension.field</argument>
-          <argument>mopa_bootstrap.form.type_extension.help</argument>
-          <argument>mopa_bootstrap.form.type_extension.legend</argument>
-          <argument>mopa_bootstrap.form.type_extension.error</argument>
-          <argument>mopa_bootstrap.form.type_extension.widget</argument>
-          <argument>mopa_bootstrap.form.type_extension.horizontal</argument>
-          <argument>mopa_bootstrap.form.type_extension.widget_collection</argument>
-          <argument>mopa_bootstrap.form.type_extension.tabbed</argument>
         </argument>
         <argument key="repeated" type="collection">
-          <argument>form.type_extension.repeated.validator</argument>
           <argument>form.type_extension.repeated.validator</argument>
         </argument>
         <argument key="submit" type="collection">
           <argument>form.type_extension.submit.validator</argument>
-          <argument>form.type_extension.submit.validator</argument>
         </argument>
         <argument key="choice" type="collection">
-          <argument>sonata.admin.form.extension.choice</argument>
           <argument>sonata.admin.form.extension.choice</argument>
         </argument>
         <argument key="button" type="collection">
           <argument>mopa_bootstrap.form.type_extension.button</argument>
-          <argument>mopa_bootstrap.form.type_extension.button</argument>
         </argument>
         <argument key="date" type="collection">
-          <argument>mopa_bootstrap.form.type_extension.date</argument>
           <argument>mopa_bootstrap.form.type_extension.date</argument>
         </argument>
       </argument>
@@ -5413,7 +5396,7 @@
       </argument>
       <argument type="service" id="swiftmailer.mailer.default.transport.eventdispatcher"/>
       <call method="setHost">
-        <argument>127.0.0.1</argument>
+        <argument>mysql-yearl.alwaysdata.net</argument>
       </call>
       <call method="setPort">
         <argument>25</argument>

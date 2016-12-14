@@ -15,8 +15,8 @@ class __TwigTemplate_b1e03a1ffdb66e6cd02f6a4c5d3ab2c34f68a409c2350d6c61920b5e6d6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0e865928e673d470b95571129362b7f3b67a8698709fb3aa776d62f3056de9ec = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0e865928e673d470b95571129362b7f3b67a8698709fb3aa776d62f3056de9ec->enter($__internal_0e865928e673d470b95571129362b7f3b67a8698709fb3aa776d62f3056de9ec_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:CRUD:dashboard__action_create.html.twig"));
+        $__internal_85635738f975363f6e3b63c013fdbd86d0468a51599d7517b769959a6f821432 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_85635738f975363f6e3b63c013fdbd86d0468a51599d7517b769959a6f821432->enter($__internal_85635738f975363f6e3b63c013fdbd86d0468a51599d7517b769959a6f821432_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:CRUD:dashboard__action_create.html.twig"));
 
         // line 1
         if (twig_test_empty($this->getAttribute(($context["admin"] ?? $this->getContext($context, "admin")), "subClasses", array()))) {
@@ -72,7 +72,7 @@ class __TwigTemplate_b1e03a1ffdb66e6cd02f6a4c5d3ab2c34f68a409c2350d6c61920b5e6d6
 ";
         }
         
-        $__internal_0e865928e673d470b95571129362b7f3b67a8698709fb3aa776d62f3056de9ec->leave($__internal_0e865928e673d470b95571129362b7f3b67a8698709fb3aa776d62f3056de9ec_prof);
+        $__internal_85635738f975363f6e3b63c013fdbd86d0468a51599d7517b769959a6f821432->leave($__internal_85635738f975363f6e3b63c013fdbd86d0468a51599d7517b769959a6f821432_prof);
 
     }
 

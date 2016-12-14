@@ -15,8 +15,8 @@ class __TwigTemplate_d395e7047da47820d59947b101e922ffd09b71d69b40777407d64873383
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_44cb8ea2fdc4eb75c464e837c65418e080514154945d6e89a347c0ae26d88ed5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_44cb8ea2fdc4eb75c464e837c65418e080514154945d6e89a347c0ae26d88ed5->enter($__internal_44cb8ea2fdc4eb75c464e837c65418e080514154945d6e89a347c0ae26d88ed5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataBlock/Profiler/icon.svg"));
+        $__internal_40662e66550e4e512d5044234485dbe83ea70610e3e5375c3274146d659e7a90 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_40662e66550e4e512d5044234485dbe83ea70610e3e5375c3274146d659e7a90->enter($__internal_40662e66550e4e512d5044234485dbe83ea70610e3e5375c3274146d659e7a90_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@SonataBlock/Profiler/icon.svg"));
 
         // line 1
         echo "<svg height=\"24\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\">
@@ -24,7 +24,7 @@ class __TwigTemplate_d395e7047da47820d59947b101e922ffd09b71d69b40777407d64873383
 </svg>
 ";
         
-        $__internal_44cb8ea2fdc4eb75c464e837c65418e080514154945d6e89a347c0ae26d88ed5->leave($__internal_44cb8ea2fdc4eb75c464e837c65418e080514154945d6e89a347c0ae26d88ed5_prof);
+        $__internal_40662e66550e4e512d5044234485dbe83ea70610e3e5375c3274146d659e7a90->leave($__internal_40662e66550e4e512d5044234485dbe83ea70610e3e5375c3274146d659e7a90_prof);
 
     }
 

@@ -15,8 +15,8 @@ class __TwigTemplate_8f8ed9ab34bf1d51baac5099779bddbb998adae037454db8e5ea6e041f6
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_85c90dcd93bc45329a2939f2186273bc94b566c37de6b1085eedb4b97ff3a21a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_85c90dcd93bc45329a2939f2186273bc94b566c37de6b1085eedb4b97ff3a21a->enter($__internal_85c90dcd93bc45329a2939f2186273bc94b566c37de6b1085eedb4b97ff3a21a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
+        $__internal_4fe01ebb91cd4ed01106944fdc21936f5d1e596d5afc2af1fa7010597cc8807e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4fe01ebb91cd4ed01106944fdc21936f5d1e596d5afc2af1fa7010597cc8807e->enter($__internal_4fe01ebb91cd4ed01106944fdc21936f5d1e596d5afc2af1fa7010597cc8807e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.html.twig"));
 
         // line 1
         echo "<!-- START of Symfony Web Debug Toolbar -->
@@ -97,24 +97,30 @@ class __TwigTemplate_8f8ed9ab34bf1d51baac5099779bddbb998adae037454db8e5ea6e041f6
         foreach ($context['_seq'] as $context["name"] => $context["template"]) {
             // line 29
             echo "        ";
-            $__internal_ed8117534b135794b3fb9d493706e69927b86ce83723935acab2d96596edbc22 = array("collector" => $this->getAttribute(            // line 30
-($context["profile"] ?? $this->getContext($context, "profile")), "getcollector", array(0 => $context["name"]), "method"), "profiler_url" =>             // line 31
-($context["profiler_url"] ?? $this->getContext($context, "profiler_url")), "token" => $this->getAttribute(            // line 32
-($context["profile"] ?? $this->getContext($context, "profile")), "token", array()), "name" =>             // line 33
-$context["name"], "profiler_markup_version" =>             // line 34
+            if (            $this->loadTemplate($context["template"], "@WebProfiler/Profiler/toolbar.html.twig", 29)->hasBlock("toolbar", $context)) {
+                // line 30
+                echo "            ";
+                $__internal_9e5e2a9c8f133143d618f55a48a66a36cbde2a4d1a1070c243e61b5899446e0a = array("collector" => $this->getAttribute(                // line 31
+($context["profile"] ?? $this->getContext($context, "profile")), "getcollector", array(0 => $context["name"]), "method"), "profiler_url" =>                 // line 32
+($context["profiler_url"] ?? $this->getContext($context, "profiler_url")), "token" => $this->getAttribute(                // line 33
+($context["profile"] ?? $this->getContext($context, "profile")), "token", array()), "name" =>                 // line 34
+$context["name"], "profiler_markup_version" =>                 // line 35
 ($context["profiler_markup_version"] ?? $this->getContext($context, "profiler_markup_version")));
-            if (!is_array($__internal_ed8117534b135794b3fb9d493706e69927b86ce83723935acab2d96596edbc22)) {
-                throw new Twig_Error_Runtime('Variables passed to the "with" tag must be a hash.');
+                if (!is_array($__internal_9e5e2a9c8f133143d618f55a48a66a36cbde2a4d1a1070c243e61b5899446e0a)) {
+                    throw new Twig_Error_Runtime('Variables passed to the "with" tag must be a hash.');
+                }
+                $context['_parent'] = $context;
+                $context = array_merge($context, $__internal_9e5e2a9c8f133143d618f55a48a66a36cbde2a4d1a1070c243e61b5899446e0a);
+                // line 37
+                echo "                ";
+                $this->loadTemplate($context["template"], "@WebProfiler/Profiler/toolbar.html.twig", 37)->displayBlock("toolbar", $context);
+                echo "
+            ";
+                $context = $context['_parent'];
+                // line 39
+                echo "        ";
             }
-            $context['_parent'] = $context;
-            $context = array_merge($context, $__internal_ed8117534b135794b3fb9d493706e69927b86ce83723935acab2d96596edbc22);
-            // line 36
-            echo "            ";
-            $this->loadTemplate($context["template"], "@WebProfiler/Profiler/toolbar.html.twig", 36)->displayBlock("toolbar", $context);
-            echo "
-        ";
-            $context = $context['_parent'];
-            // line 38
+            // line 40
             echo "    ";
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
@@ -128,35 +134,35 @@ $context["name"], "profiler_markup_version" =>             // line 34
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['name'], $context['template'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 39
+        // line 41
         echo "
     ";
-        // line 40
+        // line 42
         if (("normal" != ($context["position"] ?? $this->getContext($context, "position")))) {
-            // line 41
+            // line 43
             echo "        <a class=\"hide-button\" title=\"Close Toolbar\" tabindex=\"-1\" accesskey=\"D\" onclick=\"
             var p = this.parentNode;
             p.style.display = 'none';
             (p.previousElementSibling || p.previousSibling).style.display = 'none';
             document.getElementById('sfMiniToolbar-";
-            // line 45
+            // line 47
             echo twig_escape_filter($this->env, ($context["token"] ?? $this->getContext($context, "token")), "html", null, true);
             echo "').style.display = 'block';
             Sfjs.setPreference('toolbar/displayState', 'none');
         \">
             ";
-            // line 48
+            // line 50
             echo twig_include($this->env, $context, "@WebProfiler/Icon/close.svg");
             echo "
         </a>
     ";
         }
-        // line 51
+        // line 53
         echo "</div>
 <!-- END of Symfony Web Debug Toolbar -->
 ";
         
-        $__internal_85c90dcd93bc45329a2939f2186273bc94b566c37de6b1085eedb4b97ff3a21a->leave($__internal_85c90dcd93bc45329a2939f2186273bc94b566c37de6b1085eedb4b97ff3a21a_prof);
+        $__internal_4fe01ebb91cd4ed01106944fdc21936f5d1e596d5afc2af1fa7010597cc8807e->leave($__internal_4fe01ebb91cd4ed01106944fdc21936f5d1e596d5afc2af1fa7010597cc8807e_prof);
 
     }
 
@@ -172,7 +178,7 @@ $context["name"], "profiler_markup_version" =>             // line 34
 
     public function getDebugInfo()
     {
-        return array (  155 => 51,  149 => 48,  143 => 45,  137 => 41,  135 => 40,  132 => 39,  118 => 38,  112 => 36,  105 => 34,  104 => 33,  103 => 32,  102 => 31,  101 => 30,  99 => 29,  82 => 28,  78 => 27,  75 => 26,  70 => 24,  65 => 22,  58 => 18,  49 => 12,  45 => 11,  39 => 8,  35 => 7,  27 => 3,  25 => 2,  22 => 1,);
+        return array (  161 => 53,  155 => 50,  149 => 47,  143 => 43,  141 => 42,  138 => 41,  124 => 40,  121 => 39,  115 => 37,  108 => 35,  107 => 34,  106 => 33,  105 => 32,  104 => 31,  102 => 30,  99 => 29,  82 => 28,  78 => 27,  75 => 26,  70 => 24,  65 => 22,  58 => 18,  49 => 12,  45 => 11,  39 => 8,  35 => 7,  27 => 3,  25 => 2,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -213,15 +219,17 @@ $context["name"], "profiler_markup_version" =>             // line 34
 
 <div id=\"sfToolbarMainContent-{{ token }}\" class=\"sf-toolbarreset clear-fix\" data-no-turbolink>
     {% for name, template in templates %}
-        {% with {
-            collector: profile.getcollector(name),
-            profiler_url: profiler_url,
-            token: profile.token,
-            name: name,
-            profiler_markup_version: profiler_markup_version
-          } %}
-            {{ block('toolbar', template) }}
-        {% endwith %}
+        {% if block('toolbar', template) is defined %}
+            {% with {
+                collector: profile.getcollector(name),
+                profiler_url: profiler_url,
+                token: profile.token,
+                name: name,
+                profiler_markup_version: profiler_markup_version
+              } %}
+                {{ block('toolbar', template) }}
+            {% endwith %}
+        {% endif %}
     {% endfor %}
 
     {% if 'normal' != position %}

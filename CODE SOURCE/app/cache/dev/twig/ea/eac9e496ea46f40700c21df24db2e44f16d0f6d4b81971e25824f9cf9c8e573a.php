@@ -15,8 +15,8 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_861ae357db90d810b64ecba30ff1a36a3094a8ffc99c4f18135853c9162f3073 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_861ae357db90d810b64ecba30ff1a36a3094a8ffc99c4f18135853c9162f3073->enter($__internal_861ae357db90d810b64ecba30ff1a36a3094a8ffc99c4f18135853c9162f3073_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/exception.html.twig"));
+        $__internal_276806fdd07e465fc4daa1b0169bb22317aa114523a5f4b73cacc0a1aa12b1e8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_276806fdd07e465fc4daa1b0169bb22317aa114523a5f4b73cacc0a1aa12b1e8->enter($__internal_276806fdd07e465fc4daa1b0169bb22317aa114523a5f4b73cacc0a1aa12b1e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/exception.html.twig"));
 
         // line 1
         echo "<div class=\"block-exception\">
@@ -29,16 +29,14 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
                 <img alt=\"\" src=\"data:image/gif;base64,R0lGODlhHAAWAMQQANra2+bl5s3Mzevr6/Pz8+jo6O3t7fHx8c/Oz+Pj49PS093d3djX2NXV1eDf4MrJyvb29gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABAALAAAAAAcABYAQAWWICSOEDE4AamqRuAsT5yu6hA/wNrcfNysjl5PBOAJAAUDDRLoNRKDndAHnN6k058qaH2QuNelqCAYIm45MfGmIJCkAvUIPNB1td/uAyvEz/UqB0VUagQOZTEjgzx+Kk1CEAU8DAdqB4gPCHVjNwhucphKbzefamAFdlaNEGBZd1V3r1t6fE6wqrJ5XS4Ovb69MyQnv8QhADs=\" />
             </div>
 
-            <h1>
-                ";
-        // line 12
+            <h1>";
+        // line 11
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\CodeExtension')->formatFileFromText(nl2br(twig_escape_filter($this->env, $this->getAttribute(($context["exception"] ?? $this->getContext($context, "exception")), "message", array()), "html", null, true)));
-        echo "
-            </h1>
+        echo "</h1>
 
             <div>
                 <strong>";
-        // line 16
+        // line 14
         echo twig_escape_filter($this->env, ($context["status_code"] ?? $this->getContext($context, "status_code")), "html", null, true);
         echo "</strong> ";
         echo twig_escape_filter($this->env, ($context["status_text"] ?? $this->getContext($context, "status_text")), "html", null, true);
@@ -48,12 +46,12 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
             </div>
 
             ";
-        // line 19
+        // line 17
         $context["previous_count"] = twig_length_filter($this->env, $this->getAttribute(($context["exception"] ?? $this->getContext($context, "exception")), "allPrevious", array()));
-        // line 20
+        // line 18
         echo "            ";
         if (($context["previous_count"] ?? $this->getContext($context, "previous_count"))) {
-            // line 21
+            // line 19
             echo "                <div class=\"linked\"><span><strong>";
             echo twig_escape_filter($this->env, ($context["previous_count"] ?? $this->getContext($context, "previous_count")), "html", null, true);
             echo "</strong> linked Exception";
@@ -61,14 +59,14 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
             echo ":</span>
                     <ul>
                         ";
-            // line 23
+            // line 21
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["exception"] ?? $this->getContext($context, "exception")), "allPrevious", array()));
             foreach ($context['_seq'] as $context["i"] => $context["previous"]) {
-                // line 24
+                // line 22
                 echo "                            <li>
                                 ";
-                // line 25
+                // line 23
                 echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\CodeExtension')->abbrClass($this->getAttribute($context["previous"], "class", array()));
                 echo " <a href=\"#traces-link-";
                 echo twig_escape_filter($this->env, ($context["i"] + 1), "html", null, true);
@@ -85,12 +83,12 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['i'], $context['previous'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 28
+            // line 26
             echo "                    </ul>
                 </div>
             ";
         }
-        // line 31
+        // line 29
         echo "
             <div class=\"close-quote\">
                 <img alt=\"\" src=\"data:image/gif;base64,R0lGODlhHAAWAMQQANra2+bl5s3Mzevr6/Pz8+jo6O3t7fHx8c/Oz+Pj49PS093d3djX2NXV1eDf4MrJyvb29gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABAALAAAAAAcABYAQAWZoCOO5ACdaECuweO+sIOiDWw36IC8wjH/kAMDVoDYbLJf7ejC/QqvJHBGeC0fAgdhOrsCfDNmFHg9lo9SmvhxRpLXTpSBx6XuXNBjoN4GoNYPaSdtVoCCEIRNhm9iiS6Hjo6BjExxOWN1KAJNQAAvJpkQLS4LVAovfqGeLggQAwlne1MGBQCbqCc2AkV8bigOAQahKQ4DW0AhADs=\" />
@@ -100,29 +98,29 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
 </div>
 
 ";
-        // line 39
+        // line 37
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["exception"] ?? $this->getContext($context, "exception")), "toarray", array()));
         foreach ($context['_seq'] as $context["position"] => $context["e"]) {
-            // line 40
+            // line 38
             echo "    ";
-            $this->loadTemplate("@Twig/Exception/traces.html.twig", "@Twig/Exception/exception.html.twig", 40)->display(array("exception" => $context["e"], "position" => $context["position"], "count" => ($context["previous_count"] ?? $this->getContext($context, "previous_count"))));
+            $this->loadTemplate("@Twig/Exception/traces.html.twig", "@Twig/Exception/exception.html.twig", 38)->display(array("exception" => $context["e"], "position" => $context["position"], "count" => ($context["previous_count"] ?? $this->getContext($context, "previous_count"))));
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['position'], $context['e'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 42
+        // line 40
         echo "
 ";
-        // line 43
+        // line 41
         if (($context["logger"] ?? $this->getContext($context, "logger"))) {
-            // line 44
+            // line 42
             echo "    <div class=\"block\">
         <div class=\"logs clear-fix\">
             ";
-            // line 46
+            // line 44
             ob_start();
-            // line 47
+            // line 45
             echo "            <h2>
                 Logs&nbsp;
                 <a href=\"#\" onclick=\"toggle('logs'); switchIcons('icon-logs-open', 'icon-logs-close'); return false;\">
@@ -132,16 +130,16 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
             </h2>
             ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-            // line 55
+            // line 53
             echo "
             ";
-            // line 56
+            // line 54
             if ($this->getAttribute(($context["logger"] ?? $this->getContext($context, "logger")), "counterrors", array())) {
-                // line 57
+                // line 55
                 echo "                <div class=\"error-count\">
                     <span>
                         ";
-                // line 59
+                // line 57
                 echo twig_escape_filter($this->env, $this->getAttribute(($context["logger"] ?? $this->getContext($context, "logger")), "counterrors", array()), "html", null, true);
                 echo " error";
                 echo ((($this->getAttribute(($context["logger"] ?? $this->getContext($context, "logger")), "counterrors", array()) > 1)) ? ("s") : (""));
@@ -150,29 +148,29 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
                 </div>
             ";
             }
-            // line 63
+            // line 61
             echo "        </div>
 
         <div id=\"logs\">
             ";
-            // line 66
-            $this->loadTemplate("@Twig/Exception/logs.html.twig", "@Twig/Exception/exception.html.twig", 66)->display(array("logs" => $this->getAttribute(($context["logger"] ?? $this->getContext($context, "logger")), "logs", array())));
-            // line 67
+            // line 64
+            $this->loadTemplate("@Twig/Exception/logs.html.twig", "@Twig/Exception/exception.html.twig", 64)->display(array("logs" => $this->getAttribute(($context["logger"] ?? $this->getContext($context, "logger")), "logs", array())));
+            // line 65
             echo "        </div>
     </div>
 ";
         }
-        // line 70
+        // line 68
         echo "
 ";
-        // line 71
+        // line 69
         if (($context["currentContent"] ?? $this->getContext($context, "currentContent"))) {
-            // line 72
+            // line 70
             echo "    <div class=\"block\">
         ";
-            // line 73
+            // line 71
             ob_start();
-            // line 74
+            // line 72
             echo "        <h2>
             Content of the Output&nbsp;
             <a href=\"#\" onclick=\"toggle('output-content'); switchIcons('icon-content-open', 'icon-content-close'); return false;\">
@@ -182,11 +180,11 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
         </h2>
         ";
             echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
-            // line 82
+            // line 80
             echo "
         <div id=\"output-content\" style=\"display: none\">
             ";
-            // line 84
+            // line 82
             echo twig_escape_filter($this->env, ($context["currentContent"] ?? $this->getContext($context, "currentContent")), "html", null, true);
             echo "
         </div>
@@ -195,12 +193,12 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
     </div>
 ";
         }
-        // line 90
+        // line 88
         echo "
 ";
-        // line 91
-        $this->loadTemplate("@Twig/Exception/traces_text.html.twig", "@Twig/Exception/exception.html.twig", 91)->display(array("exception" => ($context["exception"] ?? $this->getContext($context, "exception"))));
-        // line 92
+        // line 89
+        $this->loadTemplate("@Twig/Exception/traces_text.html.twig", "@Twig/Exception/exception.html.twig", 89)->display(array("exception" => ($context["exception"] ?? $this->getContext($context, "exception"))));
+        // line 90
         echo "
 <script type=\"text/javascript\">//<![CDATA[
     function toggle(id, clazz) {
@@ -235,7 +233,7 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
 //]]></script>
 ";
         
-        $__internal_861ae357db90d810b64ecba30ff1a36a3094a8ffc99c4f18135853c9162f3073->leave($__internal_861ae357db90d810b64ecba30ff1a36a3094a8ffc99c4f18135853c9162f3073_prof);
+        $__internal_276806fdd07e465fc4daa1b0169bb22317aa114523a5f4b73cacc0a1aa12b1e8->leave($__internal_276806fdd07e465fc4daa1b0169bb22317aa114523a5f4b73cacc0a1aa12b1e8_prof);
 
     }
 
@@ -251,7 +249,7 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
 
     public function getDebugInfo()
     {
-        return array (  204 => 92,  202 => 91,  199 => 90,  190 => 84,  186 => 82,  176 => 74,  174 => 73,  171 => 72,  169 => 71,  166 => 70,  161 => 67,  159 => 66,  154 => 63,  145 => 59,  141 => 57,  139 => 56,  136 => 55,  126 => 47,  124 => 46,  120 => 44,  118 => 43,  115 => 42,  108 => 40,  104 => 39,  94 => 31,  89 => 28,  72 => 25,  69 => 24,  65 => 23,  57 => 21,  54 => 20,  52 => 19,  42 => 16,  35 => 12,  22 => 1,);
+        return array (  202 => 90,  200 => 89,  197 => 88,  188 => 82,  184 => 80,  174 => 72,  172 => 71,  169 => 70,  167 => 69,  164 => 68,  159 => 65,  157 => 64,  152 => 61,  143 => 57,  139 => 55,  137 => 54,  134 => 53,  124 => 45,  122 => 44,  118 => 42,  116 => 41,  113 => 40,  106 => 38,  102 => 37,  92 => 29,  87 => 26,  70 => 23,  67 => 22,  63 => 21,  55 => 19,  52 => 18,  50 => 17,  40 => 14,  34 => 11,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -274,9 +272,7 @@ class __TwigTemplate_20795373e881dbfcdb35bd403f3f3d3c6d5bae2e813766ce9087492842b
                 <img alt=\"\" src=\"data:image/gif;base64,R0lGODlhHAAWAMQQANra2+bl5s3Mzevr6/Pz8+jo6O3t7fHx8c/Oz+Pj49PS093d3djX2NXV1eDf4MrJyvb29gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABAALAAAAAAcABYAQAWWICSOEDE4AamqRuAsT5yu6hA/wNrcfNysjl5PBOAJAAUDDRLoNRKDndAHnN6k058qaH2QuNelqCAYIm45MfGmIJCkAvUIPNB1td/uAyvEz/UqB0VUagQOZTEjgzx+Kk1CEAU8DAdqB4gPCHVjNwhucphKbzefamAFdlaNEGBZd1V3r1t6fE6wqrJ5XS4Ovb69MyQnv8QhADs=\" />
             </div>
 
-            <h1>
-                {{ exception.message|nl2br|format_file_from_text }}
-            </h1>
+            <h1>{{ exception.message|nl2br|format_file_from_text }}</h1>
 
             <div>
                 <strong>{{ status_code }}</strong> {{ status_text }} - {{ exception.class|abbr_class }}
