@@ -2,7 +2,7 @@
 parameters:
     database_host: mysql-yearl.alwaysdata.net
     database_port: null
-    database_name: yearl_symfony
+    database_name: yearl_madera
     database_user: yearl
     database_password: lady45
     mailer_transport: smtp

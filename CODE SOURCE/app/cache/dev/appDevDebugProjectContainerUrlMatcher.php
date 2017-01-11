@@ -239,6 +239,44 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
                 }
 
+                if (0 === strpos($pathinfo, '/admin/app/gamme')) {
+                    // admin_app_gamme_list
+                    if ($pathinfo === '/admin/app/gamme/list') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'admin.gamme',  '_sonata_name' => 'admin_app_gamme_list',  '_route' => 'admin_app_gamme_list',);
+                    }
+
+                    // admin_app_gamme_create
+                    if ($pathinfo === '/admin/app/gamme/create') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'admin.gamme',  '_sonata_name' => 'admin_app_gamme_create',  '_route' => 'admin_app_gamme_create',);
+                    }
+
+                    // admin_app_gamme_batch
+                    if ($pathinfo === '/admin/app/gamme/batch') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'admin.gamme',  '_sonata_name' => 'admin_app_gamme_batch',  '_route' => 'admin_app_gamme_batch',);
+                    }
+
+                    // admin_app_gamme_edit
+                    if (preg_match('#^/admin/app/gamme/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_app_gamme_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'admin.gamme',  '_sonata_name' => 'admin_app_gamme_edit',));
+                    }
+
+                    // admin_app_gamme_delete
+                    if (preg_match('#^/admin/app/gamme/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_app_gamme_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'admin.gamme',  '_sonata_name' => 'admin_app_gamme_delete',));
+                    }
+
+                    // admin_app_gamme_show
+                    if (preg_match('#^/admin/app/gamme/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_app_gamme_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'admin.gamme',  '_sonata_name' => 'admin_app_gamme_show',));
+                    }
+
+                    // admin_app_gamme_export
+                    if ($pathinfo === '/admin/app/gamme/export') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'admin.gamme',  '_sonata_name' => 'admin_app_gamme_export',  '_route' => 'admin_app_gamme_export',);
+                    }
+
+                }
+
             }
 
         }
