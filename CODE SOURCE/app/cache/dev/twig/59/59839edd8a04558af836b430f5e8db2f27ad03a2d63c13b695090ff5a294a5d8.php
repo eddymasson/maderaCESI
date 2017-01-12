@@ -20,12 +20,12 @@ class __TwigTemplate_6b2e469257601280a0ed482a7440dc190389535e2bcaa20240597435496
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8c52aaa9566630bd15ad6d0b27ab679f531ba6564b2617b55965c5f215a606bd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8c52aaa9566630bd15ad6d0b27ab679f531ba6564b2617b55965c5f215a606bd->enter($__internal_8c52aaa9566630bd15ad6d0b27ab679f531ba6564b2617b55965c5f215a606bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Core:create_button.html.twig"));
+        $__internal_4e1b05a2795589d7bb20b3ddcca01a0e62189804341fcc007e06f36db4a12c8b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4e1b05a2795589d7bb20b3ddcca01a0e62189804341fcc007e06f36db4a12c8b->enter($__internal_4e1b05a2795589d7bb20b3ddcca01a0e62189804341fcc007e06f36db4a12c8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Core:create_button.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_8c52aaa9566630bd15ad6d0b27ab679f531ba6564b2617b55965c5f215a606bd->leave($__internal_8c52aaa9566630bd15ad6d0b27ab679f531ba6564b2617b55965c5f215a606bd_prof);
+        $__internal_4e1b05a2795589d7bb20b3ddcca01a0e62189804341fcc007e06f36db4a12c8b->leave($__internal_4e1b05a2795589d7bb20b3ddcca01a0e62189804341fcc007e06f36db4a12c8b_prof);
 
     }
 

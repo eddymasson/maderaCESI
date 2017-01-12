@@ -6,53 +6,76 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Module
+ * @ORM\Table(name="Module")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ModuleRepository")
  */
 class Module
 {
     /**
      * @var string
+     *
+     * @ORM\Column(name="unite", type="string", length=45)
      */
     private $unite;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="nature", type="string", length=45)
      */
     private $nature;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="epaisseur", type="string", length=45)
      */
     private $epaisseur;
 
     /**
      * @var float
+     *
+     * @ORM\Column(name="longueur", type="float")
      */
     private $longueur;
 
     /**
      * @var float
+     *
+     * @ORM\Column(name="hauteur", type="float")
      */
     private $hauteur;
 
     /**
      * @var float
+     *
+     * @ORM\Column(name="angleentrant", type="float")
      */
     private $angleentrant;
 
     /**
      * @var float
+     *
+     * @ORM\Column(name="anglesortant", type="float")
      */
     private $anglesortant;
 
     /**
      * @var integer
+     *
+     * @ORM\Column(name="idmodule", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $idmodule;
 
     /**
      * @var \AppBundle\Entity\Gamme
+     *
+     * @ORM\ManyToOne(targetEntity="Gamme")
+     * @ORM\JoinColumn(name="Gamme_idGamme", referencedColumnName="idGamme")
      */
-    private $gammegamme;
+    private $gamme;
 
 
     /**
@@ -248,27 +271,22 @@ class Module
     }
 
     /**
-     * Set gammegamme
+     * Set gamme
      *
-     * @param \AppBundle\Entity\Gamme $gammegamme
-     *
-     * @return Module
      */
-    public function setGammegamme(\AppBundle\Entity\Gamme $gammegamme)
+    public function setGamme(\AppBundle\Entity\Gamme $gamme)
     {
-        $this->gammegamme = $gammegamme;
+        $this->gamme = $gamme;
 
         return $this;
     }
 
     /**
-     * Get gammegamme
-     *
-     * @return \AppBundle\Entity\Gamme
+     * Get gamme
      */
-    public function getGammegamme()
+    public function getGamme()
     {
-        return $this->gammegamme;
+        return $this->gamme;
     }
 }
 

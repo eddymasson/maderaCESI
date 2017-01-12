@@ -15,8 +15,8 @@ class __TwigTemplate_db7e9dd8f3218c2ced4d80e3042f099dfb293d1b63f6566ef63c2e65f24
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cb14f7abbcc9fb7485690e760ebc4e12991b3784fb6d272920de5e298429225a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cb14f7abbcc9fb7485690e760ebc4e12991b3784fb6d272920de5e298429225a->enter($__internal_cb14f7abbcc9fb7485690e760ebc4e12991b3784fb6d272920de5e298429225a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Group:list_content.html.twig"));
+        $__internal_06ae258d6f9344e1eea965d99275b5bb4161c50270520d6c6021e48189602b0a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_06ae258d6f9344e1eea965d99275b5bb4161c50270520d6c6021e48189602b0a->enter($__internal_06ae258d6f9344e1eea965d99275b5bb4161c50270520d6c6021e48189602b0a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "FOSUserBundle:Group:list_content.html.twig"));
 
         // line 1
         echo "<div class=\"fos_user_group_list\">
@@ -42,7 +42,7 @@ class __TwigTemplate_db7e9dd8f3218c2ced4d80e3042f099dfb293d1b63f6566ef63c2e65f24
 </div>
 ";
         
-        $__internal_cb14f7abbcc9fb7485690e760ebc4e12991b3784fb6d272920de5e298429225a->leave($__internal_cb14f7abbcc9fb7485690e760ebc4e12991b3784fb6d272920de5e298429225a_prof);
+        $__internal_06ae258d6f9344e1eea965d99275b5bb4161c50270520d6c6021e48189602b0a->leave($__internal_06ae258d6f9344e1eea965d99275b5bb4161c50270520d6c6021e48189602b0a_prof);
 
     }
 

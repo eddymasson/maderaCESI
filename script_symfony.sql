@@ -1,94 +1,99 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;\csgray\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+-- phpMyAdmin SQL Dump
+-- version 4.0.10.6
+-- http://www.phpmyadmin.net
+--
+-- Host: mysql1.paris1.alwaysdata.com
+-- Generation Time: Jan 12, 2017 at 10:54 AM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.16
 
-\f0\fs24 \cf0 -- phpMyAdmin SQL Dump\
--- version 4.6.4\
--- https://www.phpmyadmin.net/\
---\
--- Client :  localhost:8889\
--- G\'e9n\'e9r\'e9 le :  Sam 26 Novembre 2016 \'e0 11:21\
--- Version du serveur :  5.6.33\
--- Version de PHP :  7.0.12\
-\
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";\
-SET time_zone = "+00:00";\
-\
---\
--- Base de donn\'e9es :  `symfony`\
---\
-\
--- --------------------------------------------------------\
-\
---\
--- Structure de la table `blog_post`\
---\
-\
-CREATE TABLE `blog_post` (\
-  `id` int(11) NOT NULL,\
-  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,\
-  `body` longtext COLLATE utf8_unicode_ci NOT NULL,\
-  `draft` tinyint(1) NOT NULL,\
-  `category_id` int(11) NOT NULL\
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;\
-\
---\
--- Contenu de la table `blog_post`\
---\
-\
-INSERT INTO `blog_post` (`id`, `title`, `body`, `draft`, `category_id`) VALUES\
-(6, 'non', 'test', 0, 1),\
-(7, 'oui', 'yolo', 0, 2);\
-\
--- --------------------------------------------------------\
-\
---\
--- Structure de la table `category`\
---\
-\
-CREATE TABLE `category` (\
-  `id` int(11) NOT NULL,\
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL\
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;\
-\
---\
--- Contenu de la table `category`\
---\
-\
-INSERT INTO `category` (`id`, `name`) VALUES\
-(1, 'Lifestyle'),\
-(2, 'Sports');\
-\
---\
--- Index pour les tables export\'e9es\
---\
-\
---\
--- Index pour la table `blog_post`\
---\
-ALTER TABLE `blog_post`\
-  ADD PRIMARY KEY (`id`);\
-\
---\
--- Index pour la table `category`\
---\
-ALTER TABLE `category`\
-  ADD PRIMARY KEY (`id`);\
-\
---\
--- AUTO_INCREMENT pour les tables export\'e9es\
---\
-\
---\
--- AUTO_INCREMENT pour la table `blog_post`\
---\
-ALTER TABLE `blog_post`\
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;\
---\
--- AUTO_INCREMENT pour la table `category`\
---\
-ALTER TABLE `category`\
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;}
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `yearl_symfony`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blog_post`
+--
+
+CREATE TABLE IF NOT EXISTS `blog_post` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category_id` int(11) DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `body` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `draft` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_BA5AE01D12469DE2` (`category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `category`
+--
+
+CREATE TABLE IF NOT EXISTS `category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fos_user`
+--
+
+CREATE TABLE IF NOT EXISTS `fos_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
+  `username_canonical` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
+  `email_canonical` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
+  `enabled` tinyint(1) NOT NULL,
+  `salt` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `confirmation_token` varchar(180) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `password_requested_at` datetime DEFAULT NULL,
+  `roles` longtext COLLATE utf8_unicode_ci NOT NULL COMMENT '(DC2Type:array)',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_957A647992FC23A8` (`username_canonical`),
+  UNIQUE KEY `UNIQ_957A6479A0D96FBF` (`email_canonical`),
+  UNIQUE KEY `UNIQ_957A6479C05FB297` (`confirmation_token`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `fos_user`
+--
+
+INSERT INTO `fos_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `confirmation_token`, `password_requested_at`, `roles`) VALUES
+(3, 'maxime', 'maxime', 'maxime@gmail.com', 'maxime@gmail.com', 1, NULL, '$2y$13$VhBdncoQiwmX7P9KlwyJF.ePUFPj1pvym3innRiMyHWUj2gtb/fY2', '2017-01-09 13:35:52', NULL, NULL, 'a:0:{}'),
+(4, 'admin', 'admin', 'admin@gmail.com', 'admin@gmail.com', 1, NULL, '$2y$13$UoURGO6.CzEy1AAwZlaZwetEpPjNP1LqRWAfjsyOhIQYoQR8xfDCm', '2017-01-09 15:06:56', NULL, NULL, 'a:1:{i:0;s:16:"ROLE_SUPER_ADMIN";}'),
+(5, 'eddy', 'eddy', 'eddy@gmail.com', 'eddy@gmail.com', 1, NULL, '$2y$13$J6A8/n.PATtSwZkgsvBIqudoXi2HthV6L1vQnA3X4/fiohoHW6A4i', NULL, NULL, NULL, 'a:0:{}'),
+(6, 'test', 'test', 'test', 'test', 1, NULL, '$2y$13$aXPSaTg4DVKVSIyIJHvx1ONnrIQEd1ujj6BabtY4Gb51u0qBu4bze', NULL, NULL, NULL, 'a:0:{}'),
+(7, 'admin2', 'admin2', 'admin2', 'admin2', 1, NULL, '$2y$13$/XZW632DER9GkXL1yU578uqag2QYHtEINbDQVnJxWgzpT7SRjvp1G', '2017-01-09 16:40:22', NULL, NULL, 'a:1:{i:0;s:16:"ROLE_SUPER_ADMIN";}');
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `blog_post`
+--
+ALTER TABLE `blog_post`
+  ADD CONSTRAINT `FK_BA5AE01D12469DE2` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

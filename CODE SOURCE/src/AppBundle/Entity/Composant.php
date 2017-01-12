@@ -20,39 +20,44 @@ class Composant
     private $nature;
 
     /**
-     * @var string
+     * @var float
      */
     private $section;
 
     /**
-     * @var string
+     * @var float
      */
     private $longueur;
 
     /**
-     * @var string
+     * @var float
      */
     private $largeur;
 
     /**
-     * @var string
+     * @var float
      */
     private $epaisseur;
 
     /**
-     * @var string
+     * @var float
      */
     private $prix;
 
     /**
-     * @var string
+     * @var float
      */
     private $pourcentagecommerciaux;
 
     /**
-     * @var string
+     * @var float
      */
     private $pourcentageentreprise;
+
+    /**
+     * @var integer
+     */
+    private $quantite;
 
     /**
      * @var integer
@@ -220,9 +225,33 @@ class Composant
     }
 
     /**
+     * Set Guantite
+     *
+     * @param integer $quantite
+     *
+     * @return Composant
+     */
+    public function setQuantite($quantite)
+    {
+        $this->quantite = $quantite;
+
+        return $this;
+    }
+
+    /**
+     * Get Quantite
+     *
+     * @return integer
+     */
+    public function getQuantite()
+    {
+        return $this->quantite;
+    }
+
+    /**
      * Set prix
      *
-     * @param string $prix
+     * @param string $quantite
      *
      * @return Composant
      */

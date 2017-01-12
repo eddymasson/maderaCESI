@@ -21,20 +21,20 @@ class __TwigTemplate_2907b22d321f779a2c7fcd04f28d4014ce8618dcc70fc5446f95dc24e5d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_cd6934e16c8007a2914888466e1f56da8b945bfaf344fee37e6689a27820df25 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cd6934e16c8007a2914888466e1f56da8b945bfaf344fee37e6689a27820df25->enter($__internal_cd6934e16c8007a2914888466e1f56da8b945bfaf344fee37e6689a27820df25_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:CRUD:base_show_compare.html.twig"));
+        $__internal_8e8024b9508b9a62b4814b25a5e2d7634597010315f22a6712d92c966fa214be = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8e8024b9508b9a62b4814b25a5e2d7634597010315f22a6712d92c966fa214be->enter($__internal_8e8024b9508b9a62b4814b25a5e2d7634597010315f22a6712d92c966fa214be_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:CRUD:base_show_compare.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_cd6934e16c8007a2914888466e1f56da8b945bfaf344fee37e6689a27820df25->leave($__internal_cd6934e16c8007a2914888466e1f56da8b945bfaf344fee37e6689a27820df25_prof);
+        $__internal_8e8024b9508b9a62b4814b25a5e2d7634597010315f22a6712d92c966fa214be->leave($__internal_8e8024b9508b9a62b4814b25a5e2d7634597010315f22a6712d92c966fa214be_prof);
 
     }
 
     // line 14
     public function block_show_field($context, array $blocks = array())
     {
-        $__internal_5e4514d05490cf9466e7074f6ea72e83ed043715b24d5c998576b11797b756bd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5e4514d05490cf9466e7074f6ea72e83ed043715b24d5c998576b11797b756bd->enter($__internal_5e4514d05490cf9466e7074f6ea72e83ed043715b24d5c998576b11797b756bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "show_field"));
+        $__internal_5bb8aec2cbf4caa256d3e1db98e351186b194a94f0709baae55559a2281f28ce = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5bb8aec2cbf4caa256d3e1db98e351186b194a94f0709baae55559a2281f28ce->enter($__internal_5bb8aec2cbf4caa256d3e1db98e351186b194a94f0709baae55559a2281f28ce_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "show_field"));
 
         // line 15
         echo "    <tr class=\"sonata-ba-view-container history-audit-compare\">
@@ -51,7 +51,7 @@ class __TwigTemplate_2907b22d321f779a2c7fcd04f28d4014ce8618dcc70fc5446f95dc24e5d
         echo "    </tr>
 ";
         
-        $__internal_5e4514d05490cf9466e7074f6ea72e83ed043715b24d5c998576b11797b756bd->leave($__internal_5e4514d05490cf9466e7074f6ea72e83ed043715b24d5c998576b11797b756bd_prof);
+        $__internal_5bb8aec2cbf4caa256d3e1db98e351186b194a94f0709baae55559a2281f28ce->leave($__internal_5bb8aec2cbf4caa256d3e1db98e351186b194a94f0709baae55559a2281f28ce_prof);
 
     }
 

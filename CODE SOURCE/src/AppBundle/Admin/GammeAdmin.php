@@ -49,6 +49,10 @@ class GammeAdmin extends AbstractAdmin
     public function toString($object)
     {
 
+
+        return $object instanceof Gamme
+            ? $object->getNom()
+            : 'Gamme'; // shown in the breadcrumb on the create view
     }
 
 

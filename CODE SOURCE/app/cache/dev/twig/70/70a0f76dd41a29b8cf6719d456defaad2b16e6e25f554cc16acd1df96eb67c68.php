@@ -15,8 +15,8 @@ class __TwigTemplate_eb987c2d4aa976eb0dad2869a8f7a4226d7a3e8eecf92f9ccf9f89d6feb
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b9b84394dc03d3e18978d4d6a3bf3807048ec4960053d27b025e31568c127d8d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b9b84394dc03d3e18978d4d6a3bf3807048ec4960053d27b025e31568c127d8d->enter($__internal_b9b84394dc03d3e18978d4d6a3bf3807048ec4960053d27b025e31568c127d8d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Button:show_button.html.twig"));
+        $__internal_ca6e331e2bfef38afa10fa0209e9819a6642d4ff0c6e7aac9d6a7cde114ea2a5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ca6e331e2bfef38afa10fa0209e9819a6642d4ff0c6e7aac9d6a7cde114ea2a5->enter($__internal_ca6e331e2bfef38afa10fa0209e9819a6642d4ff0c6e7aac9d6a7cde114ea2a5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Button:show_button.html.twig"));
 
         // line 11
         if ((($this->getAttribute(($context["admin"] ?? $this->getContext($context, "admin")), "canAccessObject", array(0 => "show", 1 => ($context["object"] ?? $this->getContext($context, "object"))), "method") && (twig_length_filter($this->env, $this->getAttribute(($context["admin"] ?? $this->getContext($context, "admin")), "show", array())) > 0)) && $this->getAttribute(($context["admin"] ?? $this->getContext($context, "admin")), "hasRoute", array(0 => "show"), "method"))) {
@@ -32,7 +32,7 @@ class __TwigTemplate_eb987c2d4aa976eb0dad2869a8f7a4226d7a3e8eecf92f9ccf9f89d6feb
 ";
         }
         
-        $__internal_b9b84394dc03d3e18978d4d6a3bf3807048ec4960053d27b025e31568c127d8d->leave($__internal_b9b84394dc03d3e18978d4d6a3bf3807048ec4960053d27b025e31568c127d8d_prof);
+        $__internal_ca6e331e2bfef38afa10fa0209e9819a6642d4ff0c6e7aac9d6a7cde114ea2a5->leave($__internal_ca6e331e2bfef38afa10fa0209e9819a6642d4ff0c6e7aac9d6a7cde114ea2a5_prof);
 
     }
 

@@ -55,6 +55,7 @@ class Gamme
 
     /**
      * @var integer
+     *
      * @ORM\Column(name="idGamme", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -214,6 +215,10 @@ class Gamme
     public function getIdgamme()
     {
         return $this->idgamme;
+    }
+
+    public function __toString() {
+        return $this->nom;
     }
 }
 
