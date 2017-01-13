@@ -6,53 +6,64 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Client
+ *
+ * @ORM\Table(name="Client")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ClientRepository")
  */
 class Client
 {
     /**
      * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=145)
      */
     private $nom;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=45)
      */
     private $prenom;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=100)
      */
     private $adresse;
 
     /**
      * @var string
-     */
-    private $ville;
-
-    /**
-     * @var integer
-     */
-    private $codepostal;
-
-    /**
-     * @var string
+     *
+     * @ORM\Column(name="telephone", type="string", length=45)
      */
     private $telephone;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="mail", type="string", length=100)
      */
     private $mail;
 
     /**
      * @var integer
+     *
+     * @ORM\Column(name="idClient", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $idclient;
 
     /**
      * @var \AppBundle\Entity\Insee
+     *
+     * @ORM\ManyToOne(targetEntity="Insee")
+     * @ORM\JoinColumn(name="Ville_idVille", referencedColumnName="idInsee")
+     *
      */
-    private $villeville;
+    private $ville;
 
 
     /**
@@ -127,43 +138,6 @@ class Client
         return $this->adresse;
     }
 
-    /**
-     * Set ville
-     *
-     * @param string $ville
-     *
-     * @return Client
-     */
-    public function setVille($ville)
-    {
-        $this->ville = $ville;
-
-        return $this;
-    }
-
-    /**
-     * Get ville
-     *
-     * @return string
-     */
-    public function getVille()
-    {
-        return $this->ville;
-    }
-
-    /**
-     * Set codepostal
-     *
-     * @param integer $codepostal
-     *
-     * @return Client
-     */
-    public function setCodepostal($codepostal)
-    {
-        $this->codepostal = $codepostal;
-
-        return $this;
-    }
 
     /**
      * Get codepostal
@@ -250,13 +224,13 @@ class Client
     /**
      * Set villeville
      *
-     * @param \AppBundle\Entity\Insee $villeville
+     * @param \AppBundle\Entity\Insee $ville
      *
      * @return Client
      */
-    public function setVilleville(\AppBundle\Entity\Insee $villeville)
+    public function setVille(\AppBundle\Entity\Insee $ville)
     {
-        $this->villeville = $villeville;
+        $this->ville = $ville;
 
         return $this;
     }
@@ -266,9 +240,9 @@ class Client
      *
      * @return \AppBundle\Entity\Insee
      */
-    public function getVilleville()
+    public function getVille()
     {
-        return $this->villeville;
+        return $this->ville;
     }
 }
 

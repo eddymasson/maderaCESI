@@ -15,8 +15,8 @@ class __TwigTemplate_a1b856984d8c82d83de2dbf1bc1a90819ac5f0aa6d9a6ab8098c961846d
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_63114e8e64286c90addb668a77cd206bdf8b0db12b6dbb175c0b2c98e5d72f1b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_63114e8e64286c90addb668a77cd206bdf8b0db12b6dbb175c0b2c98e5d72f1b->enter($__internal_63114e8e64286c90addb668a77cd206bdf8b0db12b6dbb175c0b2c98e5d72f1b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Button:acl_button.html.twig"));
+        $__internal_e0d879f028053b21a9147561942eeea0ace64698d021268ac825fc6549a5c014 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_e0d879f028053b21a9147561942eeea0ace64698d021268ac825fc6549a5c014->enter($__internal_e0d879f028053b21a9147561942eeea0ace64698d021268ac825fc6549a5c014_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "SonataAdminBundle:Button:acl_button.html.twig"));
 
         // line 11
         if ((($this->getAttribute(($context["admin"] ?? $this->getContext($context, "admin")), "isAclEnabled", array(), "method") && $this->getAttribute(($context["admin"] ?? $this->getContext($context, "admin")), "canAccessObject", array(0 => "acl", 1 => ($context["object"] ?? $this->getContext($context, "object"))), "method")) && $this->getAttribute(($context["admin"] ?? $this->getContext($context, "admin")), "hasRoute", array(0 => "acl"), "method"))) {
@@ -32,7 +32,7 @@ class __TwigTemplate_a1b856984d8c82d83de2dbf1bc1a90819ac5f0aa6d9a6ab8098c961846d
 ";
         }
         
-        $__internal_63114e8e64286c90addb668a77cd206bdf8b0db12b6dbb175c0b2c98e5d72f1b->leave($__internal_63114e8e64286c90addb668a77cd206bdf8b0db12b6dbb175c0b2c98e5d72f1b_prof);
+        $__internal_e0d879f028053b21a9147561942eeea0ace64698d021268ac825fc6549a5c014->leave($__internal_e0d879f028053b21a9147561942eeea0ace64698d021268ac825fc6549a5c014_prof);
 
     }
 

@@ -6,21 +6,32 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Insee
+ *
+ * @ORM\Table(name="Insee")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\InseeRepository")
  */
+
 class Insee
 {
     /**
      * @var string
+     *
+     * @ORM\Column(name="nomVille", type="string", length=100)
      */
     private $nomville;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="codePostal", type="string", length=45)
      */
     private $codepostal;
 
     /**
      * @var integer
+     *
+     * @ORM\Column(name="idInsee", type="integer")
+     * @ORM\Id
      */
     private $idinsee;
 
@@ -82,5 +93,24 @@ class Insee
     {
         return $this->idinsee;
     }
+
+    /**
+     * Set idinsee
+     *
+     * @param string $idinsee
+     *
+     * @return Insee
+     */
+    public function setIdinsee($idinsee)
+    {
+        $this->idinsee = $idinsee;
+
+        return $this;
+    }
+
+    public function __toString() {
+        return $this->nomville;
+    }
+
 }
 

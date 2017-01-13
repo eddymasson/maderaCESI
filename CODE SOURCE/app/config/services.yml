@@ -17,12 +17,6 @@ services:
         tags:
             - { name: sonata.admin, manager_type: orm, label: Blog post }
 
-    admin.gamme:
-        class: AppBundle\Admin\GammeAdmin
-        arguments: [~, AppBundle\Entity\Gamme, ~]
-        tags:
-            - { name: sonata.admin, manager_type: orm, label: Gamme }
-
     admin.fournisseur:
         class: AppBundle\Admin\FournisseurAdmin
         arguments: [~, AppBundle\Entity\Fournisseur, ~]
@@ -33,10 +27,28 @@ services:
         class: AppBundle\Admin\FamillecomposantAdmin
         arguments: [~, AppBundle\Entity\Famillecomposant, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: Famille de composant }
+            - { name: sonata.admin, manager_type: orm, label: Famille de composant , group : "Bureau d'étude" }
+
+    admin.gamme:
+        class: AppBundle\Admin\GammeAdmin
+        arguments: [~, AppBundle\Entity\Gamme, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Gamme , group : "Bureau d'étude"}
 
     admin.module:
         class: AppBundle\Admin\ModuleAdmin
         arguments: [~, AppBundle\Entity\Module, ~]
         tags:
-            - { name: sonata.admin, manager_type: orm, label: Module }
+            - { name: sonata.admin, manager_type: orm, label: Module , group : "Bureau d'étude" }
+
+    admin.insee:
+        class: AppBundle\Admin\InseeAdmin
+        arguments: [~, AppBundle\Entity\Insee, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Villes }
+
+    admin.client:
+        class: AppBundle\Admin\ClientAdmin
+        arguments: [~, AppBundle\Entity\Client, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Clients }

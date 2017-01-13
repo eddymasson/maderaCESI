@@ -21,9 +21,16 @@ class Fournisseur
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=500)
+     * @ORM\Column(name="adresse", type="string", length=45)
      */
-    private $description;
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mail", type="string", length=100)
+     */
+    private $mail;
 
     /**
      * @var integer
@@ -60,27 +67,27 @@ class Fournisseur
     }
 
     /**
-     * Set description
+     * Set Adresse
      *
      * @param string $description
      *
      * @return Fournisseur
      */
-    public function setDescription($description)
+    public function setAdresse($adresse)
     {
-        $this->description = $description;
+        $this->adresse = $adresse;
 
         return $this;
     }
 
     /**
-     * Get description
+     * Get Adresse
      *
      * @return string
      */
-    public function getDescription()
+    public function getAdresse()
     {
-        return $this->description;
+        return $this->adresse;
     }
 
     /**
@@ -92,5 +99,30 @@ class Fournisseur
     {
         return $this->idfournisseur;
     }
+
+    /**
+     * Set mail
+     *
+     * @param string $mail
+     *
+     * @return Fournisseur
+     */
+    public function setMail($mail)
+    {
+        $this->mail = $mail;
+
+        return $this;
+    }
+
+    /**
+     * Get mail
+     *
+     * @return string
+     */
+    public function getMail()
+    {
+        return $this->mail;
+    }
+
 }
 

@@ -19,7 +19,8 @@ class FournisseurAdmin extends AbstractAdmin
         $formMapper
 
             ->add('nom', 'text',array('label' => 'Nom du fournisseur'))
-            ->add('description', 'textarea',array('label' => 'Description'))
+            ->add('mail', 'email',array('label' => 'Adresse e-mail','required' => false))
+            ->add('adresse', 'text',array('label' => 'Adresse','required' => false))
         ;
     }
 
@@ -33,7 +34,8 @@ class FournisseurAdmin extends AbstractAdmin
         $listMapper
             ->addIdentifier('idfournisseur',null,array('label' => 'ID'))
             ->addIdentifier('nom',null,array('label' => 'Nom'))
-            ->addIdentifier('description',null,array('label' => 'Description'))
+            ->addIdentifier('mail',null,array('label' => 'Adresse e-mail'))
+            ->addIdentifier('adresse',null,array('label' => 'Adresse'))
         ;
     }
 
